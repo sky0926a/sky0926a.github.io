@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Redirect...</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script>
+    var appurl = 'halosmartspeaker://PAIRNEWDEVICE';
+    var appstore = 'https://itunes.apple.com/us/app/my.app/id1569311894?ls=1&mt=8';
+    var timeout;
+    function start() {
+      window.location = appurl;
+      timeout = setTimeout(function(){
+        document.location = appstore;
+      }, 1000);
+    }
+    window.onload = function() {
+      start()
+    }
+  </script>
+</head>
+<body>
+
+</body>
+</html>
